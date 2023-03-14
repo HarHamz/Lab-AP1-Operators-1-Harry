@@ -23,7 +23,7 @@ int main(){
     input=input%5;
     input=input*5;
 
-    cout << "The number now is " << input;
+    cout << "The number added by 2 is " << input;
 
     return 0;
 }
