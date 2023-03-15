@@ -13,17 +13,17 @@ using namespace std;
 int main(){
     system("cls");
 
-    int input;
+    int n;
 
     cout << "insert a 4-digit number: ";
-    cin >> input;
+    cin >> n;
 
-    input=input+8;
-    input=input/3;
-    input=input%5;
-    input=input*5;
+    n=n+8;
+    n=n/3;
+    n=n%5;
+    n=n*5;
 
-    cout << "The number added by 2 is " << input;
+    cout << "the number now is " << n;
 
     return 0;
 }

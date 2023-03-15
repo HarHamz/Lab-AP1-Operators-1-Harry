@@ -7,8 +7,20 @@ INPUT : 1234        OUTPUT : 10
 using namespace std;
 
 int main(){
+    system("cls");
 
+    int n;
+    int result=0;
+
+    cout << "insert a 4-digit number: ";
+    cin >> n;
+
+    while (n>0){
+        result=result+n%10; //result is previous result added by the remainder of n divided by 10
+        n=n/10;
+    }
     
+    cout << "the sum of each digit is " << result;
 
     return 0;
 }

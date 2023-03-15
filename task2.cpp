@@ -9,14 +9,14 @@ using namespace std;
 int main(){
     system("cls");
 
-    int input;
+    int n;
 
     cout << "insert a 6-digit number: ";
-    cin >> input;    
+    cin >> n;    
 
-    input=input+2;
+    n=n+2;
 
-    cout << "your number added by 2 is " << input;
+    cout << "the number added by 2 is " << n;
 
     return 0;
 }
