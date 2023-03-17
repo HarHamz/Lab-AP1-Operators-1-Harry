@@ -18,10 +18,7 @@ int main(){
     cout << "insert a 4-digit number: ";
     cin >> n;
 
-    n=n+8;
-    n=n/3;
-    n=n%5;
-    n=n*5;
+    n= ((((n+8)/3)%5)*5);
 
     cout << "the number now is " << n;
 
