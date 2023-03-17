@@ -9,14 +9,21 @@ using namespace std;
 int main(){
     system("cls");
 
-    int n;
+    int n,digit,pos=1, result=0;
 
     cout << "insert a 6-digit number: ";
-    cin >> n;    
+    cin >> n;
 
-    n=n+2;
+    while (n>0){
+        digit= n%10; //extract the last digit into digit
+        digit+= 2; //adds 2 to the digit
+        digit%= 10; //prevents overflow
+        result= result+digit*pos; //places the digit multiplied by 10 into the result
+        n/= 10; //n is n divided by 10
+        pos*= 10; // pos is multiplied by 10
+    }
 
-    cout << "the number added by 2 is " << n;
+    cout << "each digit added by 2 is " << result;
 
     return 0;
 }
